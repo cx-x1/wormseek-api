@@ -9,15 +9,15 @@ import os
 from together import Together
 
 # إعداد المتغيرات الأساسية
-API_ID = '27862562'  # استبدل بـ API ID الخاص بك
-API_HASH = '4fb25b7f2f41bd60fdf975cf55e8da16'  # استبدل بـ API HASH الخاص بك
-BOT_TOKEN = '7651085225:AAGhRsdOoKpXErHxW26iMXntfkOXe01NXA0'
+API_ID = ['API_ID']  # استبدل بـ API ID الخاص بك
+API_HASH = ['API_HASH']  # استبدل بـ API HASH الخاص بك
+BOT_TOKEN = ['7651085225:BOT_TOKEN']
 CHANNEL_USERNAME = '@u0u0v'
 
 client = TelegramClient('bot3', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 # تعيين مفتاح API كمتغير بيئي
-os.environ["TOGETHER_API_KEY"] = "7493e4e0527c3f0b6832785b21685d6ab73672a59c2647dbb6ffb696628bde8b"
+os.environ["TOGETHER_API_KEY"] = ["TOGETHER_API_KEY"]
 
 # دالة لإرسال الطلب إلى Blackbox.ai API بشكل غير متزامن
 async def send_to(user_query):
